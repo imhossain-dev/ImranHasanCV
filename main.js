@@ -118,7 +118,7 @@ window.addEventListener('scroll', scrollActive)
 
 function downloadFile() {
   const link = document.createElement('a');
-  link.href = 'assets/CV/Imran Hasan CV.pdf'; // Replace with your file path and name
+  link.href = 'Imran Hasan CV.pdf'; // Replace with your file path and name
   link.download = 'Imran Hasan CV'; // This will be the default name of the downloaded file
   link.target = '_blank'; // Opens the file in a new tab
             link.rel = 'noopener noreferrer'; // For security reasons
