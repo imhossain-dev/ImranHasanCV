@@ -196,21 +196,23 @@
                     <p><i class="uil uil-phone"></i> Tel: +8801515604269</p>
                 </div>
              </div>
-             <div class="col">
+             <div class="col" >
                 <div class="form-control">
+                    <form onsubmit="sendEmail(); reset(); return false;">
                     <div class="form-inputs">
                         <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
+                        <input type="email" class="input-field" placeholder="Email">
                     </div>
                     <div class="text-area">
                         <textarea placeholder="Message"></textarea>
                     </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    <div class="form-button" type="submit">
+                        <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
                     </div>
+                    </form>
                 </div>
              </div>
-          </div>
+            
        </section>
 
     </main>
@@ -260,6 +262,7 @@
 
     </div>
 
+    <!-- SMTP: pass: 5ECE81BD45840016F6FF6086F7ED40B96F32 server: smtp.elasticemail.com port:2525 sec: de15985d-576a-4ea7-85f4-e35a9a052956 backup:972617-->
 
 
 
@@ -270,6 +273,21 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ----- MAIN JS ----- -->
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
+      <!-- send mail -->
+       <script src="https://smtpjs.com/v3/smtp.js"></script>
+       <script>
+       function sendEmail(){
+        Email.send({
+    SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
+    To : 'imranhasan49.rt@gmail.com',
+    From : "kratosgow143@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+      }</script>
 </body>
 </html>
