@@ -116,23 +116,23 @@ sections.forEach(current =>{
 
 window.addEventListener('scroll', scrollActive)
 
-function downloadFile() {
-  const link = document.createElement('a');
-  link.href = 'Imran Hasan CV.pdf'; // Replace with your file path and name
-  link.download = 'Imran Hasan CV'; // This will be the default name of the downloaded file
-  link.target = '_blank'; // Opens the file in a new tab
-            link.rel = 'noopener noreferrer'; // For security reasons
-            link.click();
-}
-       <script>
-       function sendEmail(){
-        Email.send({
-    SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
-    To : 'kratosgow143@gmail.com',
-    From : "kratosgow143@gmail.com",
-    Subject : "Contact through website",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+// function downloadFile() {
+//   const link = document.createElement('a');
+//   link.href = 'Imran Hasan CV.pdf'; // Replace with your file path and name
+//   link.download = 'Imran Hasan CV'; // This will be the default name of the downloaded file
+//   link.target = '_blank'; // Opens the file in a new tab
+//             link.rel = 'noopener noreferrer'; // For security reasons
+//             link.click();
+// }
+//        <script>
+//        function sendEmail(){
+//         Email.send({
+//     SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
+//     To : 'kratosgow143@gmail.com',
+//     From : "kratosgow143@gmail.com",
+//     Subject : "Contact through website",
+//     Body : "And this is the body"
+// }).then(
+//   message => alert(message)
+// );
 
