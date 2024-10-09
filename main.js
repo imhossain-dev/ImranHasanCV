@@ -125,14 +125,5 @@ function downloadFile() {
             link.click();
 }
 
-       function sendEmail(){
-        Email.send({
-    SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
-    To : 'kratosgow143@gmail.com',
-    From : "kratosgow143@gmail.com",
-    Subject : "Contact through website",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+
 
