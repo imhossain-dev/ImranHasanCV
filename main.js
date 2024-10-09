@@ -124,7 +124,7 @@ function downloadFile() {
             link.rel = 'noopener noreferrer'; // For security reasons
             link.click();
 }
-       <script>
+
        function sendEmail(){
         Email.send({
     SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
