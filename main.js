@@ -126,7 +126,7 @@ function downloadFile() {
 }
 function sendEmail(){
  Email.send({
-SecureToken : "ae43b51c-7157-4bd1-a0e4-0a43a7615abd",
+SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
 To : 'imranhasan49.rt@gmail.com',
 From : "kratosgow143@gmail.com",
 Subject : "New Contact through web",
