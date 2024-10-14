@@ -127,7 +127,7 @@ function downloadFile() {
 function sendEmail(){
  Email.send({
 SecureToken : "ae43b51c-7157-4bd1-a0e4-0a43a7615abd",
-To : 'kratosgow143@gmail.com',
+To : 'imranhasan49.rt@gmail.com',
 From : "kratosgow143@gmail.com",
 Subject : "New Contact through web",
 Body : "And this is the body"
