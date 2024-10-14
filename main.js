@@ -125,16 +125,26 @@ function downloadFile() {
             link.click();
 }
 function sendEmail(){
- Email.send({
-SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
-To : 'imranhasan49.rt@gmail.com',
-From : "kratosgow143@gmail.com",
-Subject : "New Contact through web",
-Body : "And this is the body"
+//  Email.send({
+// SecureToken : "de15985d-576a-4ea7-85f4-e35a9a052956",
+// To : 'imranhasan49.rt@gmail.com',
+// From : "kratosgow143@gmail.com",
+// Subject : "New Contact through web",
+// Body : "And this is the body"
+// }).then(
+// message => alert(message)
+// );
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "kratosgow143@gmail.com",
+    Password : "5ECE81BD45840016F6FF6086F7ED40B96F32",
+    To : 'imranhasan49.rt@gmail.com',
+    From : "kratosgow143@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
 }).then(
-message => alert(message)
+  message => alert(message)
 );
-
 }
 
 
