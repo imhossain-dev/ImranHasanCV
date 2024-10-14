@@ -715,3 +715,89 @@ footer{
                 font-size: 0.9rem;
             }
         }
+      /* Education Section */
+      .education-section {
+        background: #fff;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .education-section h2 {
+        color: #333;
+        border-bottom: 2px solid #00aaff;
+        padding-bottom: 6px;
+        margin-bottom: 12px;
+        font-size: 1.2rem; /* Reduced size */
+    }
+
+    .education-item {
+        margin-bottom: 12px;
+    }
+
+    .education-item h3 {
+        color: #333;
+        margin: 0;
+        font-size: 1.0rem; /* Reduced size */
+    }
+
+    .education-item h4 {
+        color: #458fb5;
+        margin: 5px 0;
+        font-size: 1.0rem; /* Reduced size */
+    }
+
+    .education-item p {
+        margin: 5px 0;
+        color: #555;
+        font-size: 0.9rem; /* Reduced size */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            width: 95%;
+        }
+
+        .education-section h2 {
+            font-size: 1.4rem;
+        }
+
+        .education-item h3 {
+            font-size: 1.1rem;
+        }
+
+        .education-item h4 {
+            font-size: 0.95rem;
+        }
+
+        .education-item p {
+            font-size: 0.85rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .education-section h2 {
+            font-size: 1.2rem;
+        }
+
+        .education-item h3 {
+            font-size: .7rem;
+        }
+
+        .education-item h4 {
+            font-size: 0.8rem;
+        }
+
+        .education-item p {
+            font-size: 0.8rem;
+        }
+    }
+    .news-frame {
+        width: 49%;
+        height: 60vh;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        border-radius: 8px;
+    }
