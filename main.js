@@ -146,6 +146,10 @@ function sendEmail(){
   message => alert(message)
 );
 }
+function goTo(){
+  window.open(
+    "https://mail.google.com/mail/u/0/#inbox", "_blank");
+}
 
 
 
