@@ -148,7 +148,7 @@ function sendEmail(){
 }
 function goTo(){
   window.open(
-    "https://mail.google.com/mail/u/0/#inbox"), "_blank";
+    "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTMFkVChgfTnlxqHcDJWDdxpGqpWDKwTFLzPRkGQpnLRgddjtbTKfCwRTPgnzcsgCGBV", "_blank");
 }
 
 
