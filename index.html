@@ -226,7 +226,8 @@
 
                 <br/>
                                 <div class="education-item">
-                    <h3>Oracle NetSuite Certified SuiteFoundation Specialist</h3>
+                    <h3><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EE103F27CFC0A0A9259FCA9A5BC9D29D5607E204E9F51A3E8221EBD551479EA8">Oracle NetSuite Certified SuiteFoundation Specialist</a> 
+</h3>
                     <h4>Oracle NetSuite</h4>
                 </div>
 
@@ -284,36 +285,46 @@
        <!-- -------------- CONTACT BOX ---------------- -->
 
        <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: imranhasan49.rt@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +8801515604269</p>
-                </div>
-             </div>
-             <div class="col" >
-                <div class="form-control">
-                    <form onsubmit="sendEmail(); reset(); return false;">
+    <div class="top-header">
+        <h1>Get in touch</h1>
+        <span>Do you have a project in your mind, contact me here</span>
+    </div>
+
+    <div class="row">
+        <!-- CONTACT INFO -->
+        <div class="col">
+            <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p><i class="uil uil-envelope"></i> Email: imranhasan49.rt@gmail.com</p>
+                <p><i class="uil uil-phone"></i> Tel: +8801515604269</p>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="col">
+            <div class="form-control">
+                <form action="sendmail.php" method="POST">
+
                     <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="email" class="input-field" placeholder="Email">
+                        <input type="text" class="input-field" name="name" placeholder="Name" required>
+                        <input type="email" class="input-field" name="email" placeholder="Email" required>
                     </div>
+
                     <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message" required></textarea>
                     </div>
-                    <div class="form-button" type="submit">
-                        <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+
+                    <div class="form-button">
+                        <button class="btn" type="submit">
+                            Send <i class="uil uil-message"></i>
+                        </button>
                     </div>
-                    </form>
-                </div>
-             </div>
-            
-       </section>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
     </main>
 
@@ -380,6 +391,7 @@
 
 </body>
 </html>
+
 
 
 
