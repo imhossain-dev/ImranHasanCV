@@ -33,7 +33,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
-  strings : ["Developer","Consultent"],
+  strings : ["Certified Consultent","Developer"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
@@ -150,6 +150,7 @@ function goTo(){
   window.open(
     "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTMFkVChgfTnlxqHcDJWDdxpGqpWDKwTFLzPRkGQpnLRgddjtbTKfCwRTPgnzcsgCGBV", "_blank");
 }
+
 
 
 
