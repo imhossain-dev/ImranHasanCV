@@ -8,11 +8,12 @@ function sendmail(){
 
         emailjs.send("service_5as34u6","template_vlpxrtb", parms)
         .then(function(response){
-            alert("Email Sent!");
+            alert("Thanks for contacting me! I’ll respond as soon as possible.");
         })
         .catch(function(error){
             alert("Failed to send email!");
             console.log(error);
         });
     }
+
 
