@@ -12,6 +12,18 @@
 
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="port.jpg" type="image/x-icon">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "BR2d0om9GWJ4j6mYU",
+      });
+   })();
+</script>
+    <script src="script.js">
+    </script>
 
     <title>Portfolio | Imran Hasan</title>
 </head>
@@ -303,24 +315,27 @@
         <!-- CONTACT FORM -->
         <div class="col">
             <div class="form-control">
-                <form action="sendmail.php" method="POST">
+<form id="contact-form">
 
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" name="name" placeholder="Name" required>
-                        <input type="email" class="input-field" name="email" placeholder="Email" required>
-                    </div>
+    <div class="form-inputs" id="form-inputs">
+        <input type="text" class="input-field" id="name" name="name" placeholder="Name" required>
+        <input type="email" class="input-field" id="email" name="email" placeholder="Email" required>
+        <input type="text" class="input-field" id="subject" name="subject" placeholder="Subject" required>
+    </div>
 
-                    <div class="text-area">
-                        <textarea name="message" placeholder="Message" required></textarea>
-                    </div>
+    <div class="text-area" id="text-area">
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+    </div>
 
-                    <div class="form-button">
-                        <button class="btn" type="submit">
-                            Send <i class="uil uil-message"></i>
-                        </button>
-                    </div>
+    <div class="form-button" id="form-button">
+        <button class="btn" id="send-btn" type="button" onclick="sendmail()">
+            Send <i class="uil uil-message"></i>
+        </button>
+    </div>
 
-                </form>
+</form>
+
+
             </div>
         </div>
     </div>
@@ -391,6 +406,7 @@
 
 </body>
 </html>
+
 
 
 
