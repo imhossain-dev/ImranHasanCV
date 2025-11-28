@@ -6,7 +6,7 @@ function sendmail(){
             message: document.getElementById("message").value
         };
 
-        emailjs.send("service_5as34u6", "template_lwedpsg", parms)
+        emailjs.send("service_5as34u6","template_vlpxrtb", parms)
         .then(function(response){
             alert("Email Sent!");
         })
@@ -15,3 +15,4 @@ function sendmail(){
             console.log(error);
         });
     }
+
